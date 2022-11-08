@@ -1,12 +1,23 @@
 import React from 'react'
-import Link from 'next/link';
+import Link from 'next/link'
 
-import { urlFor } from '../lib/client';
+import { urlFor } from '../lib/client'
 
-
-const FooterBanner = ({ footerBanner: { discount, largeText1, largeText2, saleTime, smallText, midText, desc, product, buttonText, image }  }) => {
+const FooterBanner = ({
+  footerBanner: {
+    discount,
+    largeText1,
+    largeText2,
+    saleTime,
+    smallText,
+    midText,
+    desc,
+    product,
+    buttonText,
+    image,
+  },
+}) => {
   return (
-    
     <div className="footer-banner-container">
       <div className="banner-desc">
         <div className="left">
@@ -21,12 +32,9 @@ const FooterBanner = ({ footerBanner: { discount, largeText1, largeText2, saleTi
           <p>{desc}</p>
           <Link href={`/product/${product}`}>
             <button type="button">{buttonText}</button>
-          </Link> 
+          </Link>
+          <img src="/images/logo.png" className="footer-banner-image" />
         </div>
-
-         <img 
-          src='/images/logo.png' className="footer-banner-image"
-        /> 
       </div>
     </div>
   )
