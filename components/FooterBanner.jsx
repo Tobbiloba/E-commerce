@@ -20,6 +20,7 @@ const FooterBanner = ({
   return (
     <div className="footer-banner-container">
       <div className="banner-desc">
+        <img src="/images/logo.png" className="footer-banner-image" />
         <div className="left">
           <p>{discount}</p>
           <h3>{largeText1}</h3>
@@ -33,7 +34,6 @@ const FooterBanner = ({
           <Link href={`/product/${product}`}>
             <button type="button">{buttonText}</button>
           </Link>
-          <img src="/images/logo.png" className="footer-banner-image" />
         </div>
       </div>
     </div>

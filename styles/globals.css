@@ -190,7 +190,6 @@ span.text-red {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 16px;
-  /* color: black; */
   align-self: flex-end;
 }
 .products-heading {
@@ -242,8 +241,6 @@ span.text-red {
 }
 .footer-banner-image {
   position: absolute;
-  /* top: -35%;
-  left: 8%; */
   width: 230px;
   top: -10%;
   left: 20%;
@@ -456,8 +453,8 @@ span.text-red {
 }
 .product-detail-des {
   position: absolute;
-  right: 5%;
-  top: 12%;
+  top: 40px;
+  left: 50%;
 }
 
 .product-detail-desc h4 {
@@ -621,7 +618,7 @@ span.text-red {
   margin-top: 10px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .hero-banner-container {
     height: 560px;
   }
@@ -677,6 +674,11 @@ span.text-red {
   }
   .desc {
     bottom: 60px;
+  }
+  .product-detail-des {
+    position: absolute;
+    top: 50px;
+    left: 55%;
   }
   .product-detail-container {
     flex-wrap: wrap;
@@ -762,10 +764,21 @@ span.text-red {
     margin: auto;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   body {
     box-sizing: border-box;
-    width: 100vw;
+    width: 100%;
+  }
+  @media only screen and (max-width: 800px) {
+    .product-detail-des {
+      top: 40px;
+      left: 55%;
+    }
+  }
+  .hero-banner-image {
+    width: 250px;
+    height: 320px;
+    left: 150px;
   }
   .product-detail-des {
     position: relative;
@@ -774,19 +787,23 @@ span.text-red {
   }
   .left {
     position: relative;
-    top: 200px;
-    left: 170px;
+    top: -80px;
+    padding-left: 160px;
   }
   .right {
     position: relative;
-    bottom: 320px;
+    bottom: 50px;
     right: 10px;
   }
   .footer-banner-image {
-    position: relative;
-    width: 250px;
-    height: 200px;
-    bottom: 290px;
-    left: 0px;
+    position: absolute;
+    width: 200px;
+    height: 170px;
+    top: 90px;
+    left: 10px;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
   }
 }
